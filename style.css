@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+body{
+  background: linear-gradient(180deg, rgba(9, 113, 106, 0.82) 13.76%, rgba(9, 113, 106, 0.450217) 52.31%, rgba(9, 113, 106, 0.21908) 87.09%, rgba(9, 113, 106, 0) 97.74%), url('leaves.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+  
+}
+h1{
+  font-size: 54px;
+  text-transform: uppercase;
+  text-align: center;
+  color: yellow;
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 0;
+}
+
+#css {
+  color: yellow;
+  font-family: 'Odibee Sans', cursive;
+}
+
+.carousel-wrapper {
+  height: 550px;
+  position: relative;
+  width: 800px;
+  display: block;
+  margin: 50px auto ;
+  /* border: 2px solid black; */
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("leaves.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  margin:100px 50px;
+}
+.arrow{
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+  color: #fff;
+
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  color: #fff;
+}
+
+[id^= "item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('img1.jpg');
+  background-size: cover;
+}
+.item-2 {
+  background: url('img2.jpg');
+  background-size: cover;
+}
+.item-3 {
+  background: url('img3.jpg');
+  background-size: cover;
+}
+
+*:target ~ .item-1{
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+} 
+
+.para{
+  text-align: center;
+  padding-top:170px;
+  color: yellow;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .carousel-wrapper{
+    /* margin: 7% 10%; */
+    width: 600px;
+  }
+  .para{
+    font-size: 25px;
+    padding-top:170px;
+  }
+}
