@@ -1,0 +1,257 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+body {
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("leaves.png");
+   /* background: rgba(0, 0, 0, 0.65); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.main{
+  display:flex;
+  padding:0px 200px;
+}
+
+.container {
+  /* position: relative; */
+  /* left: 106px; */
+  /* top: 20px; */
+  max-width: 700px;
+  /* width: 100%; */
+  /* opacity: 0.2; */
+  background-color: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 649px;
+height: 500px;
+  
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+/* .container header {
+  font-size: 35px;
+  color: #333;
+  font-weight: 500;
+  text-align: left;
+  color:white;
+} */
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  /* width: 100%; */
+  /* margin-top: 20px; */
+}
+.input-box label {
+    color:white;
+    font-weight: 500;
+font-size: 20px;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  margin-top: 8px;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  padding: 0 15px;
+  background-color: rgba(255,255,255,0.1);
+}
+.input-box input:focus {
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
+  border:1px solid black;
+}
+/* .form .column {
+  display: flex;
+  column-gap: 15px;
+} */
+/* .form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+} */
+/* .select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+} */
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 15px;
+  text-align :center;  
+}
+.form button:hover {
+  background: black;
+}
+.btn{
+  display:flex;
+  justify-content: center;
+}
+.full-name{
+  width: 407px;
+}
+
+.email{
+  width: 471px;
+}
+.phonenumber{
+  width: 217px;
+}
+
+.message{
+  width:100%;
+  
+}
+.msginp{
+  height:150px;
+  width:100%;
+}
+.form :where(.input-box textarea, .select-box) {
+  position: relative;
+  /* height: 50px; */
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  margin-top: 8px;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: rgba(255,255,255,0.1);
+}
+.input-box textarea:focus {
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
+  border:1px solid black;
+}
+
+.heading{
+  color:white;
+  /* height: 170px; */
+}
+h2{
+  padding: 50px 200px;
+  color:white;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.list{
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+  margin-top: 100px;
+  padding:0 0 0 100px;
+  list-style: none;
+}
+.icon{
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width: 360px) {
+  .form .input-box {
+    flex-wrap: wrap;
+  }
+  /* .form :where(.gender-option, .gender) {
+    row-gap: 15px; */
+    .main{
+      flex-wrap: wrap;
+      width: 100%;
+      margin:0;
+      padding:0;
+    }
+    .list{
+      margin-top: 50px;
+      /* text-align: center; */
+      padding:0 30px;
+    }
+    .links{
+      margin:0 0 20px 0;
+    }
+    h2{
+      margin:30px 0 40px 0;
+      padding:0;
+    }
+  }
+
+
