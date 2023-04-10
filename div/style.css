@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main{
+    margin-top: 100px; /* comment this later*/
+    /* border:2px solid red; */
+      /* comment this later*/
+    height: 150px;
+    display: flex;
+    background-color:  #09716A;
+    opacity: 0.9;
+}
+
+.img1{
+    background-image: url('ourwork-girl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:200px;
+    width: 200px;
+    margin-top: -42px;
+    margin-left: 40px;
+}
+
+.img2{
+    background-image: url('Plants.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:200px;
+    width: 200px;
+    margin-top: -48px;
+    
+}
+
+.text{
+    margin: auto;
+    color: white;
+}
+
+.btn{
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EEB011;
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.heading span{
+    color: #FFE600;
+}
+
+
+@media only screen and (max-width: 60em) {
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: none;
+    }
+    .text{
+        padding:20px;
+        font-size: 15px;
+    }
+    .main{
+        padding-bottom: 10px;
+    }
+}
